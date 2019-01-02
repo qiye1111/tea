@@ -1,0 +1,24 @@
+<!--pages/list/list.wxml-->
+ <view class='card'>
+  <view class='card-header'>
+    <image lazy-load='true' mode='aspectFill' src='http://127.0.0.1:3000/img/10.png' class='img-one'></image>
+    <image lazy-load='true' mode='aspectFill' src='http://127.0.0.1:3000/img/11.png' class='img-two'></image>
+  </view>  
+  <view class='card-order'>
+    <text bindtap='getMsg' data-sel='0' class='{{isChange==0?"active":""}}'>综合</text>
+    <text bindtap='getMsg' data-sel='1' class='{{isChange==1?"active":""}}'>销量</text>
+    <text bindtap='getMsg' data-sel='2' class='{{isChange==2?"active":""}}'>价格</text>
+    <text bindtap='getMsg' data-sel='3' class='{{isChange==3?"active":""}}'>评价</text>
+  </view>
+  <view class='card-content'>    
+    <view class='content-item' wx:for='{{list}}' wx:key='index' data-tid='{{item.tid}}' bindtap='handle'>
+      <image lazy-load='true' mode='aspectFill' src='{{item.img_url}}' class='img'></image>
+      <view class='content-desc'>
+        <view class='content-title'>{{item.title}}</view>        
+        <view class='content-price'>￥{{item.price}}</view>
+        <view class='content-label'>{{item.label}}</view>        
+      </view>
+    </view>
+    <button bindtap='getMsg'>加载更多</button>
+  </view>
+</view> 

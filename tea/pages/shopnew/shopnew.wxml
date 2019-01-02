@@ -1,0 +1,25 @@
+<!--pages/shopnew/shopnew.wxml-->
+<view class='list'>
+  <view class='list-header'>
+    <image lazy-load='true' mode='aspectFill' src='http://127.0.0.1:3000/img/02.jpg'></image>
+  </view> 
+  <view class='list-content'>
+    <text class='content-item' bindtap='getMore' data-cid='1'>养生红茶</text>
+    <text class='content-item' bindtap='getMore' data-cid='2'>甘醇绿茶</text>
+    <text class='content-item' bindtap='getMore' data-cid='3'>浪漫花茶</text>
+    <text class='content-item' bindtap='getMore' data-cid='4'>铁观音</text>
+  </view>  
+  <view class='card'>
+    <view class='card-item' wx:for='{{list}}' wx:key='index'>
+      <view class='card-header'>{{item.title}}</view>
+      <view class='card-content'>
+        <image src='{{item.img_url}}'></image>
+      </view>
+      <view class='card-desc'>{{item.subtitle}}</view>
+      <view class='card-footer'>
+        <text class='footer-price'>￥{{item.price}}</text>
+        <text class='footer-desc' bindtap='handle' data-tid='{{item.tid}}'>查看详情</text>
+      </view>
+    </view>
+  </view>  
+</view>

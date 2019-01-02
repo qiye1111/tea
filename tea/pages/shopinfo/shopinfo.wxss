@@ -1,0 +1,103 @@
+/* pages/shopinfo/shopinfo.wxss */
+.info{
+  position: relative;
+  width:100%;
+  height:80%; 
+}
+.info .info-header .img-one{
+  width:100%;
+}
+.info .info-header .img-two{
+  display: block;
+  width:100%;
+  height:80rpx;
+  position:absolute;
+  top:20rpx;
+}
+.info-order{
+  width:100%; 
+  background:#ddd;   
+  font-size:14px;
+  line-height:100%;
+  display: flex;
+  justify-content: space-around;
+  padding:2% 0;
+  border-bottom:3rpx solid #ddd;    
+}
+.info-content .conten-img{
+  border:1rpx solid #ddd;
+  border-radius: 2%;
+  margin-top:20rpx;
+}
+.info-content .conten-img image{
+  width:100%;
+  margin:top center;  
+}
+.info-content.content-title{
+  display: flex;
+  justify-content: space-between;
+}
+.info-content .content-title .title{
+  width:80%;  
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin:20rpx 20rpx;
+  font-size:16px;
+  font-weight:bold;
+}
+.info-content .content-label{
+  font-size:16px;
+  color:#ccc;
+  margin:20rpx 20rpx;
+}
+.info-content .content-price{
+  display: flex;
+  justify-content: space-around;
+  border-bottom:3rpx solid #ddd;  
+}
+.info-content .content-price .price{
+  color:red;
+  font-size:24px;
+}
+.info-content .content-price .sales{
+  font-size:14px;
+  padding:25rpx;
+}
+.info-content .content-price .comment{
+  font-size:14px;
+  padding:25rpx;
+}
+.info-msg{
+  border:1rpx solid #ddd;
+  border-radius: 2%;
+  margin-bottom:125rpx;
+}
+.info-msg .msg{
+  font-size:12px;
+}
+.active{
+  display: none;
+}
+.info-footer{
+  width:100%;
+  position:fixed;
+  bottom:0;
+  display: flex;
+  justify-content: space-between;    
+}
+.info-footer .btn1{
+  width:50%;
+  height:125rpx;
+  padding:0;
+  background:#eee;
+  line-height:125rpx;    
+}
+.info-footer .btn2{
+  width:50%;
+  height:125rpx;
+  padding:0;  
+  background:#7b0b11;
+  color:#fff;
+  line-height:125rpx;  
+}

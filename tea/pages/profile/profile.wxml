@@ -1,0 +1,14 @@
+<!--pages/profile/profile.wxml-->
+<view>
+    <view class='avatar'>
+      <!--头像  -->
+      <image src='http://127.0.0.1:3000/img/avatar.png' lazy-load='true' mode='aspectFill'/>
+    </view>
+    <view class='divider'></view>
+    <view class='cell'>
+      <view class='cell-item arrow'>我的预约</view>
+      <view class='cell-item arrow' >外卖订单</view>
+      <view class='cell-item arrow'>拼团订单</view>
+       <view class='cell-item arrow'>优惠券</view>
+    </view>
+</view>

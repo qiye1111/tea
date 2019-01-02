@@ -1,0 +1,49 @@
+<!--pages/shopinfo/shopinfo.wxml-->
+<view class='info'>
+  <view class='info-header'>
+    <image lazy-load='true' mode='aspectFill' src='http://127.0.0.1:3000/img/10.png' class='img-one'></image>
+    <image lazy-load='true' mode='aspectFill' src='http://127.0.0.1:3000/img/11.png' class='img-two'></image>
+  </view> 
+  <view class='info-order'>
+    <text>综合</text>
+    <text>销量</text>
+    <text>价格</text>
+    <text>评价</text>
+  </view> 
+  <view wx:for='{{list}}' wx:key='index'>
+    <view class='info-content' >
+      <view class='conten-img'>
+        <image lazy-load='true' mode='aspectFill' src='{{item.img_url}}'></image>
+      </view>
+      <view class='content-title'>
+        view class='title'>{{item.title}}</view>      
+      </view>
+      <view class='content-label'>{{item.label}}</view>
+      <view class='content-price'>
+        <text class='price'>￥{{item.price}}</text>
+        <text class='sales'>销量：{{item.sales}}</text>
+        <text class='comment'>评论：{{item.comment}}</text>
+      </view>
+    </view>
+    <view class='info-msg' >    
+      <view class='msg' class='{{isHidden?"active":""}}'>
+        <view>商品信息：</view>
+        <view>产品参数</view>
+        <view>储藏方法：密封、干燥、防潮、低温</view>
+        <view>保质期：540天</view>
+        <view>食品添加剂：无</view>
+        <view>产品名称：菊博士胎菊</view>
+        <view>净含量：80g</view>
+        <view>外包装类型：包装</view>
+        <view>包装种类：罐装</view>
+        <view>产地：中国大陆</view>
+        <view>省份：浙江省</view>
+        <view>是否进口：国产</view>
+      </view>
+      <button bindtap='handle'>查看商品详情</button>
+    </view>
+    <view class='info-footer'>    
+      <button class='btn1' bindtap='addCart' form-type='submit'>加入购物车</button>
+      <button class='btn2'>立即购买</button>
+    </view>
+</view>

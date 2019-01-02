@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view>
+  <!--轮播图  -->
+  <view class='slider'>
+    <swiper autoplay='2000'>
+      <swiper-item wx:for='{{list}}' wx:key='index'>
+        <image lazy-load='true' mode='aspectFill' src='{{item.img_url}}'></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!--首页分类  -->
+  <view>
+    <view class='content'>
+      <view class='content-item' wx:for='{{arr}}' wx:key='index' data-id='{{item.index_list_id}}' bindtap='handle'>
+        <image src='{{item.img_url}}' lazy-load='true' mode='aspectFill'></image>
+        <button>{{item.list_name}}</button>
+      </view>      
+    </view>
+    <view class='footer'>
+        <image lazy-load='true' mode='aspectFill' src='http://127.0.0.1:3000/img/index2.png'></image>
+    </view>
+  </view>
+</view>

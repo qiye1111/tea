@@ -1,0 +1,70 @@
+/* pages/list/list.wxss */
+.card{
+  position: relative;
+  width:100%;
+  height:80%;  
+}
+.card .card-header .img-one{
+  width:100%;
+}
+.card .card-header .img-two{
+  display: block;
+  width:100%;
+  height:80rpx;  
+  position: absolute;
+  top:20rpx;
+}
+.card-order{
+  width:100%;    
+  font-size:14px;
+  line-height:100%;
+  display: flex;
+  justify-content: space-around;
+  padding:2% 0;
+  border-bottom:3rpx solid #ddd;    
+}
+.active{
+  color:#b23225;
+  border-bottom:4rpx solid #b23225;
+}
+.card-content{  
+  width:100%;    
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.content-item{
+  border:1rpx solid #ddd;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;  
+  width:48%;
+  margin-bottom:10rpx;
+}
+.content-item .img{
+  width:200rpx;
+  height:200rpx;
+  margin:0 auto;  
+} 
+.content-desc .content-title{
+  font-size:12px;
+  font-weight:bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width:80%;  
+}
+.content-desc .content-price{
+  color:red;
+  font-size:18px;
+  font-weight:bold;
+}
+.content-desc .content-label{
+  font-size:12px;
+}
+button{
+  width:100%;
+  height:100rpx;
+  background:#ddd;
+  margin-bottom: 10rpx;
+}

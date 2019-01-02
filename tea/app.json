@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/cart/cart",
+    "pages/index/index",
+    "pages/shopinfo/shopinfo",
+    
+    "pages/shopnew/shopnew",
+    "pages/list/list",
+    
+    "pages/profile/profile"    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0f9670",
+    "navigationBarTitleText": "九州树叶",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "backgroundColor": "#0f9670",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/tabber/index.png",
+        "selectedIconPath": "pages/tabber/index-active.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "商品列表",
+        "iconPath": "pages/tabber/list.png",
+        "selectedIconPath": "pages/tabber/list-active.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "pages/tabber/cart.png",
+        "selectedIconPath": "pages/tabber/cart-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "个人中心",
+        "iconPath": "pages/tabber/profile.png",
+        "selectedIconPath": "pages/tabber/profile-active.png"
+      }
+    ]
+  }
+}
